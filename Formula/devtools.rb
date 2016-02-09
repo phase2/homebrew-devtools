@@ -5,8 +5,8 @@
 class Devtools < Formula
   desc "Containerized platform environment for projects"
   homepage ""
-  url "https://s3.amazonaws.com/phase2.devtools/devtools-0.0.1.tar.gz"
-  version "0.0.1"
+  url "https://s3.amazonaws.com/phase2.devtools/devtools-0.0.2.tar.gz"
+  version "0.0.2"
   sha256 "94a93f2228465a751d758fad1b25c0f4181690b9c13aa4c1219a4c28ac7431c0"
 
   # On mac generate the sha256 with: shasum -a 256 [FILE]
