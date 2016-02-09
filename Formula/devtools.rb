@@ -15,6 +15,7 @@ class Devtools < Formula
   depends_on "docker-machine" => :recommended
 
   def install
+    bin.install "devtools"
   end
 
   test do
