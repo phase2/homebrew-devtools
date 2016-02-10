@@ -9,6 +9,10 @@ class Devtools < Formula
   version "0.0.2"
   sha256 "94a93f2228465a751d758fad1b25c0f4181690b9c13aa4c1219a4c28ac7431c0"
 
+  depends_on "phase2/devtools/docker" => :recommended
+  depends_on "phase2/devtools/docker-machine" => :recommended
+  depends_on "phase2/devtools/docker-compose" => :recommended
+
   # On mac generate the sha256 with: shasum -a 256 [FILE]
 
   # resource "docker" do
