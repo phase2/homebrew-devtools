@@ -7,13 +7,6 @@ class DockerCompose < Formula
     sha256 "8f0851b417d89bc5023e72918233449a0fa72d9952ac66494c1b37434516583d"
   end
 
-  bottle do
-    cellar :any
-    sha256 "5b3c92a6648c919d94fa002365ddfab725df37bb14a00c3bd55e9217078054f2" => :el_capitan
-    sha256 "372f021380dbf7db250400f334873090d36a561cfcd290851ffc4e2312220fd3" => :yosemite
-    sha256 "5a45a61d82c5ca8f3815fcb889db5efda6e2e07f71451f48791d8f7746b5ab4e" => :mavericks
-  end
-
   head do
     url "https://github.com/docker/compose.git"
   end

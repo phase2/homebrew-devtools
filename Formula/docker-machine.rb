@@ -7,14 +7,6 @@ class DockerMachine < Formula
   sha256 "050640764c9f55e76b9475b04ebd9d6069e63cf7e2b54c2d07eda9254722d90e"
   head "https://github.com/docker/machine.git"
 
-  bottle do
-    cellar :any_skip_relocation
-    revision 1
-    sha256 "cabf289587f3a24e87e27aa96b100e7696159a847ab2c5d825cbd0f6c150bb8a" => :el_capitan
-    sha256 "f8fcf2aeec09de57d577fb2730f24966866e28b5ae52c781ed21827a84f2a799" => :yosemite
-    sha256 "ff6e326bb360e0dfe80d36e3408bb0785c235c908b34dac72005e40e0f81eae2" => :mavericks
-  end
-
   depends_on "go" => :build
   depends_on "automake" => :build
 
