@@ -5,7 +5,7 @@
 class Devtools < Formula
   desc "Containerized platform environment for projects"
   homepage ""
-  url "https://s3.amazonaws.com/phase2.devtools/devtools-0.0.2.tar.gz"
+  url "https://s3.amazonaws.com/phase2.devtools/devtools-0.1.0.tar.gz"
   version "0.1.0"
   sha256 "919f9fc12a5b1763fb5424b513a69b2dc3dd8043a459c20bb6a008fb69d71996"
 
