@@ -7,7 +7,7 @@ class Devtools < Formula
   homepage ""
   url "https://s3.amazonaws.com/phase2.devtools/devtools-0.1.0.tar.gz"
   version "0.1.0"
-  sha256 "919f9fc12a5b1763fb5424b513a69b2dc3dd8043a459c20bb6a008fb69d71996"
+  sha256 "7f988b7ffaaf35f88383b98bf3cb036146d708fe4c5657d9fc7b4a837729b56e"
 
   def install
     bin.install "devtools"
