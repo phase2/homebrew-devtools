@@ -18,9 +18,9 @@ Docker tools that are compatible with current version of DevTools.
 
   `brew install devtools`
 
-This will get you the `devtools` binary.  However you will likely also need to
-install the Docker formula too to get the proper versions of Docker tools for
-DevTools. You can do so like...
+This will get you the `devtools` binary.  However you will likely need to
+install the various Docker formula to get the proper versions of Docker 
+tools for DevTools. You can do so like...
 
   ```
   brew install phase2/devtools/docker
@@ -34,13 +34,12 @@ If a new version of DevTools is released you need to do the following to upgrade
 
   ```
   brew update
-  brew upgrade DevTools
+  brew upgrade devtools
   ```
 
 ## Troubleshooting
 
 If you need to enable a specific/proper version of any of these formula you can 
-use this command, for example, to explicitly use the 0.5.4 version fo docker-machine.
+use this command, for example, to explicitly use the 0.5.4 version of docker-machine.
 
   `brew switch docker-machine 0.5.4`
-  
