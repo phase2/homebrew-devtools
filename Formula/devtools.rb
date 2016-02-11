@@ -5,9 +5,9 @@
 class Devtools < Formula
   desc "Containerized platform environment for projects"
   homepage ""
-  url "https://s3.amazonaws.com/phase2.devtools/devtools-0.1.1.tar.gz"
-  version "0.1.1"
-  sha256 "f094e19dc8926638486e2d461285106f656b4fe85576d66401087a8b114e55eb"
+  url "https://s3.amazonaws.com/phase2.devtools/devtools-0.1.2.tar.gz"
+  version "0.1.2"
+  sha256 "a56d67038902a4fa5bda5feb70bca6b85e76b5d8badfefc53e4efe400947ce8b"
 
   def install
     bin.install "devtools"
