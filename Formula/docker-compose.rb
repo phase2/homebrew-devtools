@@ -14,11 +14,6 @@ class DockerCompose < Formula
   depends_on :python if MacOS.version <= :snow_leopard
   depends_on "libyaml"
 
-  # It's possible that the user wants to manually install Docker and Machine,
-  # for example, they want to compile Docker manually
-  depends_on "docker" => :recommended
-  depends_on "docker-machine" => :recommended
-
   resource "docker-py" do
     url "https://pypi.python.org/packages/source/d/docker-py/docker-py-1.5.0.tar.gz"
     sha256 "6924128fac46afef0de16ebdffc30a8c071246312260f289d895129f4e00f8d0"
