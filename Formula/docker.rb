@@ -4,7 +4,6 @@ class Docker < Formula
   url "https://github.com/docker/docker.git",
       :tag => "v1.9.1",
       :revision => "a34a1d598c6096ed8b5ce5219e77d68e5cd85462"
-  revision 1
 
   head "https://github.com/docker/docker.git"
 
