@@ -41,7 +41,7 @@ If a new version of DevTools is released you need to do the following to upgrade
 
 To help troubleshoot your devtools installation run the following command:
 
-  `brew doctor`
+  `devtools doctor`
 
 If you need to enable a specific/proper version of any of these formula you can 
 use this command, for example, to explicitly use the 0.5.4 version of docker-machine.
