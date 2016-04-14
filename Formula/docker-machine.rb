@@ -3,33 +3,14 @@ require "language/go"
 class DockerMachine < Formula
   desc "Create Docker hosts locally and on cloud providers"
   homepage "https://docs.docker.com/machine"
-  url "https://github.com/docker/machine/archive/v0.5.4.tar.gz"
-  sha256 "050640764c9f55e76b9475b04ebd9d6069e63cf7e2b54c2d07eda9254722d90e"
-  head "https://github.com/docker/machine.git"
 
-  depends_on "go" => :build
-  depends_on "automake" => :build
-
-  go_resource "github.com/codegangsta/cli" do
-    url "https://github.com/codegangsta/cli.git",
-      :revision => "bca61c476e3c752594983e4c9bcd5f62fb09f157"
-  end
+  url "https://github.com/docker/machine/releases/download/v0.5.4/docker-machine_darwin-amd64"
+  version "0.5.4"
+  sha256 "c08296e94dae10b50e8360e4dfd23c0e35bc30156ccebb3e63c83bd5dc88c4bb"
 
   def install
-    ENV["GOBIN"] = bin
-    ENV["GOPATH"] = buildpath
-    ENV["GOHOME"] = buildpath
-
-    path = buildpath/"src/github.com/docker/machine"
-    path.install Dir["*"]
-
-    Language::Go.stage_deps resources, buildpath/"src"
-
-    cd path do
-      system "make", "build"
-      bin.install Dir["bin/*"]
-      bash_completion.install Dir["contrib/completion/bash/*.bash"]
-    end
+    bin.install "docker-machine_darwin-amd64"
+    mv bin/"docker-machine_darwin-amd64", bin/"docker-machine"
   end
 
   test do
