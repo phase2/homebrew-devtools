@@ -1,13 +1,17 @@
 class Devtools < Formula
   desc "Containerized platform environment for projects. See https://phase2.github.io/devtools for documentation. "
   homepage "https://phase2.github.com/devtools"
-  url "https://s3.amazonaws.com/phase2.devtools/devtools-0.3.1.tar.gz"
-  version "0.3.1"
-  sha256 "b20dc819ba10a1f2d1f628a8dc7c9567083d68eb32e66ae36205b0921b43a04f"
+  url "https://s3.amazonaws.com/phase2.devtools/devtools-0.4.0.tar.gz"
+  version "0.4.0"
+  sha256 "2b745f68193402db1d12a1ad22cbc5001445277c143cc44ce4acc5fd3984a95f"
+
+  depends_on "docker"
+  depends_on "docker-machine"
+  depends_on "docker-compose"
+  depends_on "docker-machine-nfs"
 
   def install
     bin.install "devtools"
-    bin.install "docker-machine-nfs.sh"
     bin.install "docker-machine-watch-rsync.sh"
   end
 
