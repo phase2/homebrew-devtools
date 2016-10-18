@@ -1,9 +1,9 @@
 class Devtools < Formula
   desc "Containerized platform environment for projects. See https://phase2.github.io/devtools for documentation. "
   homepage "https://phase2.github.com/devtools"
-  url "https://s3.amazonaws.com/phase2.devtools/devtools-1.0.0.tar.gz"
-  version "1.0.0"
-  sha256 "650d62cad5e9a86e64b3999ef83cfca0e96915ba6f6f9051bfe86f6880ae6e1f"
+  url "https://s3.amazonaws.com/phase2.devtools/devtools-1.0.1.tar.gz"
+  version "1.0.1"
+  sha256 "cfa5b61b3e1de18961e9ddefe9f9e30cbec6d545b2b1cc410aec16be3038590b"
 
   depends_on "docker"
   depends_on "docker-machine"
